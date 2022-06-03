@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fr.univartois.butinfo.ihm.bomberman.controller.BombermanController">
+    <center>
+        <GridPane fx:id="gridPane" BorderPane.alignment="CENTER">
+        </GridPane>
+    </center>
+    <top>
+        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0"
+              BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Bomberman">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="15.0"/>
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <children>
+                        <Label text="Vote vie : "/>
+                        <Label fx:id="playerHealth" alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER"/>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <children>
+                        <Label text="Bombes restantes : ">
+                            <HBox.margin>
+                                <Insets bottom="15.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="playerBombs" alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>
